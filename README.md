@@ -12,7 +12,7 @@ This repo serves two main goals:
 
 The following `README` is a guide to build and deploy with Codeship Pro You will also be able to run this project locally, and use it as a starter app for NodeJS Docker projects.
 
-Be sure to star/watch this repo to stay up-to-date with any changes. If you have any questions or suggestions regarding this example , please submit an [issue here](https://github.com/codeship-library/nodejs-express-todoapp/issues/new).
+Be sure to star/watch this repo to stay up-to-date with any changes
 
 ## Getting Started
 
@@ -24,8 +24,6 @@ There are a few resources to make sure you have available during this guide.
 2. A public, cloud based [Github](https://github.com/join)/[Gitlab](https://gitlab.com/users/sign_in#register)/[Bitbucket](https://bitbucket.org/account/signup/) Account - Git Repository service
   + These must be cloud based, and not on your own servers.
   + You must be an admin for the repo
-3. [Codeship](https://app.codeship.com/registrations/new) Account - CI/CD service
-  + You can signup using any of the 3rd party logins or email/password
 4. [Codeship Jet CLI](https://documentation.codeship.com/pro/getting-started/installation/#installing-jet) - CLI tool for testing builds locally
   + This can also be installed with `brew cask install jet`
 
@@ -35,13 +33,6 @@ Signup for each of these is free, and should only take you a few minutes if you 
 
 Once you have everything ready to go, you can move on to the next step.
 
-## Continuous Integration with Codeship
-
-Continuous Integration requires developers to integrate code to a repository that is then verified by an automated build.
-
-This project uses [Jest]() integration testing of the `todo` api, and [eslint]() for code linting.  Every commit into the shared repo will be tested to verify the code is working correctly before allowing it to be merged.
-
-In this section, you will set up your repository, create a Codeship project, and test the build locally using Jet CLI.
 
 ### Fork repo
 Using the account you set up in the Getting Started section, you will now create your own repository to connect to Codeship.
@@ -129,27 +120,6 @@ Much like continuous integration, continuous deployment is the practice of shipp
 
 Let's get the app set up, and start deploying code.
 
-### Create Heroku app
-1. Login to Heroku (if not already)
-2. Click `New` -> `Create New App`
-  + You can leave the defaults, or change them as needed
-3. Click the `Create App` button
-
-This app uses [`PostgreSQL`](https://www.postgresql.org/) as it's database, and Heroku has a free add-on you can use.
-
-1. Click `Resources`
-2. Under `Add-ons`, search for `postgres`
-3. In the results drop down, click on  "Heroku Postgres"
-4. Leave the selction as `Hobby Dev - Free`, then click the `Provision` button.
-
-Copy the new application name for use later.
-
-### Get Your Heroku API key
-1. Click on your avatar in the upper right, then click `Account Settings`
-2. Near the bottom, you will find `API key`. Click the `Reveal` button
-3. Copy the API key
-4. In the project files on your local machine, open `deployment.env.sample` and change `your_api_key_here` to your api key without any qutes.
-13. Rename `deployment.env.sample` to `deployment.env`
 
 ### Create encrypted files
 
